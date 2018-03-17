@@ -48,6 +48,6 @@ class ApplicationController < Sinatra::Base
     binding.pry
     @post = Post.find(params[:id])
     @post.destroy
-    erb :'posts/index'
+    erb :'posts/new'
   end
 end
