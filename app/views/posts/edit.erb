@@ -1,4 +1,4 @@
-<h1>Editing Blog Post <%= "#{post.id}. #{post.name}" %>
+<h1>Editing Blog Post <%= "#{@post.id}. #{@post.name}" %>
 <form action="/posts/<%= @post.id %>" method="post">
     <input id="hidden" type="hidden" name="content" value="patch">
     <input type="text">
